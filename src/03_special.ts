@@ -19,3 +19,31 @@ function failMessage(msg: string): never {
 }
 
 //note:do not use any . try to ignore as much as possible
+
+
+// let's discuss a senario
+
+let valueAny: any = JSON.parse('{"x":1}')
+
+valueAny.notThere.toFixed(2)
+// --> now this code will compile as type is any and compiler does not where the given methods exit or not. but will break in runtime as there not exit anything like notThere.toFixed()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,3 +22,21 @@ type user2 = {
 type user3 = {
     email: string | undefined
 }
+
+type count = { [k: string]: number }
+
+type count1 = Record<"likes" | "views" | "shares", number>
+
+const c1: count = {
+    whatever: 1
+}
+
+const c2: count1 = {
+    likes: 1,
+    views: 2,
+    shares: 3
+
+}
+
+
+

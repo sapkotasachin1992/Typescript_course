@@ -29,3 +29,6 @@ function sum(nums: readonly number[]): number {
 
 
 console.log(sum([1, 2, 3, 4]));//mutable array
+
+
+//note: same is for map and filter you can do in mutable but not for immutable

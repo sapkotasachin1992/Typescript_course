@@ -17,3 +17,26 @@ function makeRange(...args: [start: number, end: number, step?: number]): number
     return out
 }
 
+
+
+function draw(x: number, y: number) {
+    console.log(x, y);
+
+}
+const points = [1, 2]
+// draw(...points) not a fixed[number,number] tuple so give error
+//above explain: parameter of draw is expecting fixed two values but while calling typescript assumes
+// points/values  could be:
+// [1, 2]
+// [10, 20]
+// [1, 2, 3]
+// []
+// [100]
+// so it gives error
+
+
+const filxedPints = [1, 2] as const
+draw(...filxedPints)   //now this becomes readonly fixed tuple
+
+
+

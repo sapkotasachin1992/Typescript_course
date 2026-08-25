@@ -23,7 +23,6 @@ const user: Metrices = {
     "shares": 10
 }
 
-
 //when we have dynamic key at runtime insted of record we can use map
 
 const price = new Map<string, number>()

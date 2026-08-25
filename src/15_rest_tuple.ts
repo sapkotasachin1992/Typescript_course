@@ -36,7 +36,7 @@ const points = [1, 2]
 
 
 const filxedPints = [1, 2] as const
-draw(...filxedPints)   //now this becomes readonly fixed tuple
+draw(...filxedPints)   //now this becomes readonly fixed tuple  || ... means spread operator here
 
 
 

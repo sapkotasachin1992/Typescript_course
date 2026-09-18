@@ -5,7 +5,7 @@
 let subtitile: string | undefined = "sangam"
 
 
-//for any function set it's return type to void if it is not returning anything instead of leaving it as type any
+//for any function set, it's return type to void if it is not returning anything instead of leaving it as type any
 
 function log(msg: string): void {
     console.log(msg);
